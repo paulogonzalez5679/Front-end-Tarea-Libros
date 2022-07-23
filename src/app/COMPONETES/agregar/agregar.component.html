@@ -1,0 +1,20 @@
+<div class="container">
+    <form action="">
+      <label for="tarea">Nombre</label>
+      <input type="text" id="tarea" name="tarea" [(ngModel)]="tareaNueva.nombre">
+      <br>
+      <label for="autor">Autor</label>
+      <input type="text" name="autor" id="autor" [(ngModel)]="tareaNueva.autor">
+      <br>
+      <label for="descripcion">Descripcion</label>
+      <input type="text" name="descripcion" id="descripcion" [(ngModel)]="tareaNueva.descripcion">
+      <br>
+      <label for="ejemplares">Ejemplares</label>
+      <input type="text" name="ejemplares" id="ejemplares" [(ngModel)]="tareaNueva.ejemplares">
+      <br>
+      <label for="costo">Costo</label>
+      <input type="text" name="costo" id="costo" [(ngModel)]="tareaNueva.costo">
+      <br>
+      <button class="btn btn-primary" (click)="agregarTarea()">Guardar</button>
+    </form>
+</div>
